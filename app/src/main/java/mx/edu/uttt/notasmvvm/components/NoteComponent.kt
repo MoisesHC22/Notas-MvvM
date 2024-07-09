@@ -47,8 +47,8 @@ fun NoteIputText(modifier: Modifier = Modifier,
 fun NoteButton(
     modifier: Modifier = Modifier,
     text: String,
-    onClick:() -> Unit,
-    enabled: Boolean = true
+    onClick:()->Unit,
+    enabled:Boolean=true
 ){
     Button(onClick = onClick,
         shape = RoundedCornerShape(10.dp),
@@ -57,7 +57,7 @@ fun NoteButton(
             .fillMaxWidth()
             .background(color = Color.White),
         colors = ButtonDefaults.buttonColors(
-            containerColor = Color10
+            containerColor = Purple40
         )
         ) {
         Text(text= text)
